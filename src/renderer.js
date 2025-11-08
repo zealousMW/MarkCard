@@ -61,7 +61,6 @@ function renderBlock(block) {
       const tag = block.ordered ? "ol" : "ul";
       const items = (block.items || [])
         .map((it) => {
-          // item may be an object {content,inlines} or a string
           if (typeof it === "string") return `<li>${escapeHtml(it)}</li>`;
           if (it.inlines) return `<li>${renderInlines(it.inlines)}</li>`;
           return `<li>${escapeHtml(it.content || "")}</li>`;
@@ -107,7 +106,6 @@ function renderBlock(block) {
       return `<table class=\"table\"><thead><tr>${header}</tr></thead><tbody>${rows}</tbody></table>`;
     }
     default:
-      // Unknown block - try to stringify
       return `<pre>${escapeHtml(JSON.stringify(block, null, 2))}</pre>`;
   }
 }
@@ -211,29 +209,27 @@ function buildHTML(bodyContent) {
 </html>`;
 }
 
-// --- main ---
-const inputPath = resolve(process.cwd(), "output", "cards.json");
-let json;
-try {
-  json = JSON.parse(readFileSync(inputPath, "utf-8"));
-} catch (err) {
-  console.error("Failed to read output/cards.json:", err.message);
-  process.exit(1);
+export function renderJsonToHtml(json) {
+  const cards = json.cards || [];
+  const htmlCards = cards
+    .map((card) => {
+      const blocks = (card.blocks || []).flatMap((b) =>
+        Array.isArray(b) ? b : [b]
+      );
+      const inner = blocks.map(renderBlock).join("\n");
+      return `<section class=\"card\"><div class=\"card-inner\">${inner}</div></section>`;
+    })
+    .join("\n");
+  return buildHTML(htmlCards);
 }
 
-const cards = json.cards || [];
+export function renderFile(jsonPath, outHtmlPath) {
+  const json = JSON.parse(
+    readFileSync(resolve(process.cwd(), jsonPath), "utf-8")
+  );
+  const html = renderJsonToHtml(json);
+  writeFileSync(resolve(process.cwd(), outHtmlPath), html, "utf-8");
+  return outHtmlPath;
+}
 
-const htmlCards = cards
-  .map((card) => {
-    const blocks = (card.blocks || []).flatMap((b) =>
-      Array.isArray(b) ? b : [b]
-    );
-    const inner = blocks.map(renderBlock).join("\n");
-    return `<section class=\"card\"><div class=\"card-inner\">${inner}</div></section>`;
-  })
-  .join("\n");
-
-const outHtml = buildHTML(htmlCards);
-const outPath = resolve(process.cwd(), "output", "sample.html");
-writeFileSync(outPath, outHtml, "utf-8");
-console.log(`Wrote HTML preview to ${outPath}`);
+export default { renderJsonToHtml, renderFile };

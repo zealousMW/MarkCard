@@ -1,0 +1,511 @@
+{
+  "cards": [
+    {
+      "id": "card-1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 1,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Variables"
+            }
+          ],
+          "content": "Variables"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Variables store values for later use."
+            }
+          ],
+          "content": "Variables store values for later use."
+        }
+      ]
+    },
+    {
+      "id": "card-2",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Variables — Quick"
+            }
+          ],
+          "content": "Variables — Quick"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Variables hold data. Use meaningful names."
+            }
+          ],
+          "content": "Variables hold data. Use meaningful names."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Declare with let/const (JS), var is older.",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Declare with let/const (JS), var is older."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Example:"
+            }
+          ],
+          "content": "Example:"
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "let count = 5;\nconsole.log(count); // 5"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Quiz:"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " What keyword should you use for a value that doesn't change? "
+            },
+            {
+              "type": "emphasis",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Answer: const"
+                }
+              ]
+            }
+          ],
+          "content": "Quiz: What keyword should you use for a value that doesn't change? Answer: const"
+        }
+      ]
+    },
+    {
+      "id": "card-3",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Data Types"
+            }
+          ],
+          "content": "Data Types"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Common types: number, string, boolean, null, undefined."
+            }
+          ],
+          "content": "Common types: number, string, boolean, null, undefined."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Strings use quotes: \"hello\"",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Strings use quotes: \"hello\""
+                }
+              ]
+            },
+            {
+              "content": "Numbers: 42, 3.14",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Numbers: 42, 3.14"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Example:"
+            }
+          ],
+          "content": "Example:"
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "const name = \"Alex\";\nconst age = 30;"
+        }
+      ]
+    },
+    {
+      "id": "card-4",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Operators"
+            }
+          ],
+          "content": "Operators"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Operators perform actions: arithmetic, comparison, logical."
+            }
+          ],
+          "content": "Operators perform actions: arithmetic, comparison, logical."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "/ %",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "/ %"
+                }
+              ]
+            },
+            {
+              "content": "===, !==, >, <",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "===, !==, >, <"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Example:"
+            }
+          ],
+          "content": "Example:"
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "const sum = 2 + 3; // 5\nconst ok = (sum === 5); // true"
+        }
+      ]
+    },
+    {
+      "id": "card-5",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Control Flow"
+            }
+          ],
+          "content": "Control Flow"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Control which code runs: if, else, loops."
+            }
+          ],
+          "content": "Control which code runs: if, else, loops."
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Example:"
+            }
+          ],
+          "content": "Example:"
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "if (age >= 18) {\n  console.log('Adult');\n} else {\n  console.log('Minor');\n}"
+        }
+      ]
+    },
+    {
+      "id": "card-6",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Functions"
+            }
+          ],
+          "content": "Functions"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Functions bundle reusable logic."
+            }
+          ],
+          "content": "Functions bundle reusable logic."
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "function greet(name) {\n  return `Hi, ${name}`;\n}"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Tip:"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " Keep functions small and focused."
+            }
+          ],
+          "content": "Tip: Keep functions small and focused."
+        }
+      ]
+    },
+    {
+      "id": "card-7",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Arrays"
+            }
+          ],
+          "content": "Arrays"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Arrays store ordered lists."
+            }
+          ],
+          "content": "Arrays store ordered lists."
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "const nums = [1, 2, 3];\nnums.push(4);"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Quiz:"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " How do you get the first item? "
+            },
+            {
+              "type": "emphasis",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Answer: nums[0]"
+                }
+              ]
+            }
+          ],
+          "content": "Quiz: How do you get the first item? Answer: nums[0]"
+        }
+      ]
+    },
+    {
+      "id": "card-8",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Objects"
+            }
+          ],
+          "content": "Objects"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Objects store key-value pairs."
+            }
+          ],
+          "content": "Objects store key-value pairs."
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "const user = { name: 'Sam', age: 25 };\nconsole.log(user.name); // 'Sam'"
+        }
+      ]
+    },
+    {
+      "id": "card-9",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Async (Promises)"
+            }
+          ],
+          "content": "Async (Promises)"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Promises handle async results."
+            }
+          ],
+          "content": "Promises handle async results."
+        },
+        {
+          "type": "code",
+          "language": "js",
+          "content": "fetch('/api/data')\n  .then(res => res.json())\n  .then(data => console.log(data));"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Tip:"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " Use async/await for clearer flow."
+            }
+          ],
+          "content": "Tip: Use async/await for clearer flow."
+        }
+      ]
+    },
+    {
+      "id": "card-10",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Summary"
+            }
+          ],
+          "content": "Summary"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Practice small examples, one idea per card. Keep cards short so learners read on one screen."
+            }
+          ],
+          "content": "Practice small examples, one idea per card. Keep cards short so learners read on one screen."
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Good luck and keep coding!"
+            }
+          ],
+          "content": "Good luck and keep coding!"
+        }
+      ]
+    }
+  ]
+}

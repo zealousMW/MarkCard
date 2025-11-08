@@ -1,0 +1,485 @@
+{
+  "cards": [
+    {
+      "id": "card-1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 1,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Credit Card Management System - Full-Stack Technical Challenge"
+            }
+          ],
+          "content": "Credit Card Management System - Full-Stack Technical Challenge"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "A production-ready prototype of a Credit Card Management System providing secure user authentication, encrypted storage of sensitive financial data, a data-driven dashboard with interactive visualizations, and AI-powered financial insights (Google Gemini Pro).\r\n🚀 Live Demo\r\nTry it out here:\r\n👉 "
+            },
+            {
+              "type": "link",
+              "url": "https://credit-card-management-system-lyart.vercel.app/login",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "https://credit-card-management-system-lyart.vercel.app/login"
+                }
+              ]
+            }
+          ],
+          "content": "A production-ready prototype of a Credit Card Management System providing secure user authentication, encrypted storage of sensitive financial data, a data-driven dashboard with interactive visualizations, and AI-powered financial insights (Google Gemini Pro).\r\n🚀 Live Demo\r\nTry it out here:\r\n👉 https://credit-card-management-system-lyart.vercel.app/login"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "You can log in using the demo account below or register a new user to explore the system:"
+            }
+          ],
+          "content": "You can log in using the demo account below or register a new user to explore the system:"
+        },
+        {
+          "type": "heading",
+          "level": 1,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Demo Credentials:"
+            }
+          ],
+          "content": "Demo Credentials:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Email: test2@gmail.com",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Email: "
+                },
+                {
+                  "type": "link",
+                  "url": "mailto:test2@gmail.com",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "test2@gmail.com"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "content": "Password: 12345678",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Password: 12345678"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Features"
+            }
+          ],
+          "content": "Features"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "🛡️ Secure User ManagementFull authentication: user registration and loginJWT-powered sessions for stateless authenticationPasswords hashed with bcryptjsProtected routes: users can only access their own data",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "🛡️ Secure User Management"
+                },
+                {
+                  "type": "text",
+                  "value": "Full authentication: user registration and login"
+                },
+                {
+                  "type": "text",
+                  "value": "JWT-powered sessions for stateless authentication"
+                },
+                {
+                  "type": "text",
+                  "value": "Passwords hashed with bcryptjs"
+                },
+                {
+                  "type": "text",
+                  "value": "Protected routes: users can only access their own data"
+                }
+              ]
+            },
+            {
+              "content": "💳 Encrypted Card Data ManagementAES-256-CBC encryption of credit card numbers (server-side) with key from environment variableFull CRUD for monthly bills and paymentsDynamic financial metrics per card: Current Balance, Used Limit, Unused LimitCategorized spending for analysis",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "💳 Encrypted Card Data Management"
+                },
+                {
+                  "type": "text",
+                  "value": "AES-256-CBC encryption of credit card numbers (server-side) with key from environment variable"
+                },
+                {
+                  "type": "text",
+                  "value": "Full CRUD for monthly bills and payments"
+                },
+                {
+                  "type": "text",
+                  "value": "Dynamic financial metrics per card: Current Balance, Used Limit, Unused Limit"
+                },
+                {
+                  "type": "text",
+                  "value": "Categorized spending for analysis"
+                }
+              ]
+            },
+            {
+              "content": "📊 Data-Driven Dashboard with AI InsightsInteractive visualizations (e.g., Recharts)Spending composition analysis (pie chart, time filters)Advanced AI insights from Google Gemini Pro: - Financial risk score - Top spending category - Spending & payment habit analysis - Personalized advice and predicted date to reach credit limit\r\n\r\n\r\n\r\n",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "📊 Data-Driven Dashboard with AI Insights"
+                },
+                {
+                  "type": "text",
+                  "value": "Interactive visualizations (e.g., Recharts)"
+                },
+                {
+                  "type": "text",
+                  "value": "Spending composition analysis (pie chart, time filters)"
+                },
+                {
+                  "type": "text",
+                  "value": "Advanced AI insights from Google Gemini Pro: - Financial risk score - Top spending category - Spending & payment habit analysis - Personalized advice and predicted date to reach credit limit\r\n"
+                },
+                {
+                  "type": "text",
+                  "value": "\r\n"
+                },
+                {
+                  "type": "text",
+                  "value": "\r\n"
+                },
+                {
+                  "type": "text",
+                  "value": "\r\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Tech Stack"
+            }
+          ],
+          "content": "Tech Stack"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Frontend: Next.js (React)",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Frontend: Next.js (React)"
+                }
+              ]
+            },
+            {
+              "content": "Backend: Node.js + Express",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Backend: Node.js + Express"
+                }
+              ]
+            },
+            {
+              "content": "Database: MySQL",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Database: MySQL"
+                }
+              ]
+            },
+            {
+              "content": "Key libraries: Axios, Recharts, bcryptjs, jsonwebtoken, dotenv, cors",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Key libraries: Axios, Recharts, bcryptjs, jsonwebtoken, dotenv, cors"
+                }
+              ]
+            },
+            {
+              "content": "AI: Google Gemini Pro via @google/genai SDK",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "AI: Google Gemini Pro via @google/genai SDK"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Getting Started"
+            }
+          ],
+          "content": "Getting Started"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Prerequisites:"
+            }
+          ],
+          "content": "Prerequisites:"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Node.js v18+",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Node.js v18+"
+                }
+              ]
+            },
+            {
+              "content": "npm or yarn",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "npm or yarn"
+                }
+              ]
+            },
+            {
+              "content": "Git",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Git"
+                }
+              ]
+            },
+            {
+              "content": "Running MySQL server (XAMPP/WAMP or direct install)",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Running MySQL server (XAMPP/WAMP or direct install)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Clone the repository",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Clone the repository"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "content": "git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git\ncd YOUR_REPOSITORY"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Backend",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Backend"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "content": "cd backend\nnpm install\ncp .env.example .env\n# Edit backend/.env with your credentials"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Database",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Database"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            {
+              "content": "Create a MySQL database matching DB_NAME in backend/.env (e.g., `card_manager_db`).",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Create a MySQL database matching DB_NAME in backend/.env (e.g., "
+                },
+                {
+                  "type": "inlineCode",
+                  "value": "card_manager_db"
+                },
+                {
+                  "type": "text",
+                  "value": ")."
+                }
+              ]
+            },
+            {
+              "content": "The server will create required tables (`users`, `credit_cards`, `categories`, `monthly_bills`) and seed categories on first run.",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "The server will create required tables ("
+                },
+                {
+                  "type": "inlineCode",
+                  "value": "users"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inlineCode",
+                  "value": "credit_cards"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inlineCode",
+                  "value": "categories"
+                },
+                {
+                  "type": "text",
+                  "value": ", "
+                },
+                {
+                  "type": "inlineCode",
+                  "value": "monthly_bills"
+                },
+                {
+                  "type": "text",
+                  "value": ") and seed categories on first run."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Frontend",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Frontend"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "language": "bash",
+          "content": "cd frontend\nnpm install"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Environment Variables (backend/.env)"
+            }
+          ],
+          "content": "Environment Variables (backend/.env)"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Example (.env.example):"
+            }
+          ],
+          "content": "Example (.env.example):"
+        },
+        {
+          "type": "code",
+          "language": "env",
+          "content": "# Database\nDB_HOST=localhost\nDB_USER=your_mysql_username\nDB_PASSWORD=your_mysql_password\nDB_NAME=card_manager_db\n\n# Security\nJWT_SECRET=your_super_secret_jwt_string_that_is_long\n# ENCRYPTION_KEY must be exactly 32 characters for AES-256\nENCRYPTION_KEY=a1b2c3d4e5f6g7h8a1b2c3d4e5f6g7h8\n\n# Google Gemini API Key\nGEMINI_API_KEY=your_google_ai_studio_api_key"
+        }
+      ]
+    }
+  ]
+}

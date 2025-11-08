@@ -19,6 +19,7 @@
   "homepage": "https://github.com/zealousMW/MarkCard#readme",
   "description": "",
   "dependencies": {
+    "commander": "^14.0.2",
     "rehype-stringify": "^10.0.1",
     "remark-gfm": "^4.0.1",
     "remark-parse": "^11.0.0",

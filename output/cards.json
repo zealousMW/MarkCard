@@ -261,19 +261,10 @@
         },
         {
           "type": "table",
-          "header": [
-            "Name",
-            "Description"
-          ],
+          "header": ["Name", "Description"],
           "rows": [
-            [
-              "alpha",
-              "first item"
-            ],
-            [
-              "beta",
-              "second item"
-            ]
+            ["alpha", "first item"],
+            ["beta", "second item"]
           ]
         },
         {

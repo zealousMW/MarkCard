@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MarkCard Preview</title>
+  <style>
+    :root{
+      --bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--text:#e6eef8;
+      --gap:16px; --max-width:1000px;
+    }
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#081024 0%,#071022 100%);color:var(--text);font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.4;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-width);margin:24px auto;padding:16px;box-sizing:border-box}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);border-radius:12px;padding:18px;margin:12px 0;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{font-size:1.6rem;margin:.25rem 0}
+    h2{font-size:1.15rem;margin:.4rem 0}
+    h3{font-size:1rem}
+    p{color:var(--muted);margin:.6rem 0}
+    pre{background:#021026;padding:12px;border-radius:8px;overflow:auto;color:#dbeafe;position:relative;margin:.75rem 0}
+    code.inline-code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px;color:#ffd;font-size:.95em} 
+    .img-wrap{display:flex;justify-content:center;margin:12px 0}
+    .img-wrap img{max-width:100%;height:auto;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+    table.table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem}
+    table.table th, table.table td{border:1px solid rgba(255,255,255,0.04);padding:8px;text-align:left}
+    a{color:var(--accent);word-break:break-all}
+    ul,ol{color:var(--muted);padding-left:1.2rem}
+    .copy-btn{position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.35);border:0;color:var(--text);padding:8px 10px;border-radius:8px;cursor:pointer;font-size:.9rem}
+    .copy-btn:active{transform:translateY(1px)}
+    .copy-msg{position:absolute;top:8px;right:84px;background:#111827;color:#fff;padding:6px 8px;border-radius:6px;font-size:13px;display:none}
+
+    /* Mobile friendliness */
+    @media (max-width: 640px) {
+      .wrap{margin:16px;padding:12px}
+      .card{padding:14px;border-radius:10px}
+      h1{font-size:1.25rem}
+      h2{font-size:1.05rem}
+      pre{font-size:.9rem}
+      .copy-btn{padding:10px 12px;right:6px;top:6px;border-radius:10px}
+      .copy-msg{right:68px;font-size:12px}
+      table.table th, table.table td{padding:6px;font-size:.9rem}
+      code.inline-code{font-size:0.92em}
+    }
+
+    /* Make long code blocks wrap nicer on small screens */
+    pre code{white-space:pre-wrap;word-break:break-word}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>MarkCard Preview</h1>
+    <section class="card"><div class="card-inner"><h1>Credit Card Management System - Full-Stack Technical Challenge</h1>
+<p>A production-ready prototype of a Credit Card Management System providing secure user authentication, encrypted storage of sensitive financial data, a data-driven dashboard with interactive visualizations, and AI-powered financial insights (Google Gemini Pro).
+🚀 Live Demo
+Try it out here:
+👉 <a href="https://credit-card-management-system-lyart.vercel.app/login" target="_blank" rel="noopener noreferrer">https://credit-card-management-system-lyart.vercel.app/login</a></p>
+<p>You can log in using the demo account below or register a new user to explore the system:</p>
+<h1>Demo Credentials:</h1>
+<ul>
+<li>Email: <a href="mailto:test2@gmail.com" target="_blank" rel="noopener noreferrer">test2@gmail.com</a></li>
+<li>Password: 12345678</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>🛡️ Secure User ManagementFull authentication: user registration and loginJWT-powered sessions for stateless authenticationPasswords hashed with bcryptjsProtected routes: users can only access their own data</li>
+<li>💳 Encrypted Card Data ManagementAES-256-CBC encryption of credit card numbers (server-side) with key from environment variableFull CRUD for monthly bills and paymentsDynamic financial metrics per card: Current Balance, Used Limit, Unused LimitCategorized spending for analysis</li>
+<li>📊 Data-Driven Dashboard with AI InsightsInteractive visualizations (e.g., Recharts)Spending composition analysis (pie chart, time filters)Advanced AI insights from Google Gemini Pro: - Financial risk score - Top spending category - Spending &amp; payment habit analysis - Personalized advice and predicted date to reach credit limit
+
+
+
+</li>
+</ul>
+<h2>Tech Stack</h2>
+<ul>
+<li>Frontend: Next.js (React)</li>
+<li>Backend: Node.js + Express</li>
+<li>Database: MySQL</li>
+<li>Key libraries: Axios, Recharts, bcryptjs, jsonwebtoken, dotenv, cors</li>
+<li>AI: Google Gemini Pro via @google/genai SDK</li>
+</ul>
+<h2>Getting Started</h2>
+<p>Prerequisites:</p>
+<ul>
+<li>Node.js v18+</li>
+<li>npm or yarn</li>
+<li>Git</li>
+<li>Running MySQL server (XAMPP/WAMP or direct install)</li>
+</ul>
+<ol>
+<li>Clone the repository</li>
+</ol>
+<pre><code class="language-bash">git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY</code></pre>
+<ol>
+<li>Backend</li>
+</ol>
+<pre><code class="language-bash">cd backend
+npm install
+cp .env.example .env
+# Edit backend/.env with your credentials</code></pre>
+<ol>
+<li>Database</li>
+</ol>
+<ul>
+<li>Create a MySQL database matching DB_NAME in backend/.env (e.g., <code class="inline-code">card_manager_db</code>).</li>
+<li>The server will create required tables (<code class="inline-code">users</code>, <code class="inline-code">credit_cards</code>, <code class="inline-code">categories</code>, <code class="inline-code">monthly_bills</code>) and seed categories on first run.</li>
+</ul>
+<ol>
+<li>Frontend</li>
+</ol>
+<pre><code class="language-bash">cd frontend
+npm install</code></pre>
+<h2>Environment Variables (backend/.env)</h2>
+<p>Example (.env.example):</p>
+<pre><code class="language-env"># Database
+DB_HOST=localhost
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+DB_NAME=card_manager_db
+
+# Security
+JWT_SECRET=your_super_secret_jwt_string_that_is_long
+# ENCRYPTION_KEY must be exactly 32 characters for AES-256
+ENCRYPTION_KEY=a1b2c3d4e5f6g7h8a1b2c3d4e5f6g7h8
+
+# Google Gemini API Key
+GEMINI_API_KEY=your_google_ai_studio_api_key</code></pre></div></section>
+  </div>
+  <script>
+    // Add copy buttons to all code blocks
+    (function(){
+      function createBtn(){
+        const btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.type = 'button';
+        btn.textContent = 'Copy';
+        return btn;
+      }
+      function createMsg(){
+        const s = document.createElement('div');
+        s.className = 'copy-msg';
+        s.textContent = 'Copied!';
+        return s;
+      }
+      document.querySelectorAll('pre > code').forEach((code) => {
+        const pre = code.parentNode;
+        pre.style.position = 'relative';
+        const btn = createBtn();
+        const msg = createMsg();
+        pre.appendChild(btn);
+        pre.appendChild(msg);
+        btn.addEventListener('click', async () => {
+          try{
+            await navigator.clipboard.writeText(code.textContent);
+            msg.style.display = 'block';
+            setTimeout(()=> msg.style.display = 'none', 1500);
+          }catch(e){
+            // Fallback
+            const ta = document.createElement('textarea');
+            ta.value = code.textContent;
+            document.body.appendChild(ta);
+            ta.select();
+            try{document.execCommand('copy'); msg.style.display='block'; setTimeout(()=> msg.style.display = 'none',1500);}catch(err){}
+            document.body.removeChild(ta);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
