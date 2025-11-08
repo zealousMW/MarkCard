@@ -1,0 +1,46 @@
+{
+  "cards": [
+    {
+      "id": "card-1",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 1,
+          "content": "welcome to markCode"
+        },
+        {
+          "type": "paragraph",
+          "content": "this is the first card . it is very simple"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Item 1",
+            "Item 2",
+            "Item 3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "card-2",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "content": "Secind Card: Code"
+        },
+        {
+          "type": "paragraph",
+          "content": "This card has a code block. We'll want to apply syntax highlighting to this later."
+        },
+        {
+          "type": "code",
+          "language": "javascript",
+          "content": "function greet() {\r\n  console.log(\"Hello, MarkScroll!\");\r\n}"
+        }
+      ]
+    }
+  ]
+}
