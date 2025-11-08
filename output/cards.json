@@ -6,39 +6,296 @@
         {
           "type": "heading",
           "level": 1,
-          "content": "welcome to markCode"
+          "inlines": [
+            {
+              "type": "text",
+              "value": "MarkCard — Single Big Card Example"
+            }
+          ],
+          "content": "MarkCard — Single Big Card Example"
         },
         {
           "type": "paragraph",
-          "content": "this is the first card . it is very simple"
+          "inlines": [
+            {
+              "type": "text",
+              "value": "This single card contains many block types so you can see how the parser and renderer handle a dense, content-rich card. It includes inline formatting, lists, quotes, tables, multiple code blocks (JS + Python), links, images, and a final notes section."
+            }
+          ],
+          "content": "This single card contains many block types so you can see how the parser and renderer handle a dense, content-rich card. It includes inline formatting, lists, quotes, tables, multiple code blocks (JS + Python), links, images, and a final notes section."
         },
         {
           "type": "list",
           "ordered": false,
           "items": [
-            "Item 1",
-            "Item 2",
-            "Item 3"
+            {
+              "content": "Quick start",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Quick start"
+                }
+              ]
+            },
+            {
+              "content": "Keep cards short when possible",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Keep cards short when possible"
+                }
+              ]
+            },
+            {
+              "content": "Use clear headings to break sections",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Use clear headings to break sections"
+                }
+              ]
+            }
           ]
-        }
-      ]
-    },
-    {
-      "id": "card-2",
-      "blocks": [
+        },
         {
           "type": "heading",
           "level": 2,
-          "content": "Secind Card: Code"
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Inline formatting & link"
+            }
+          ],
+          "content": "Inline formatting & link"
         },
         {
           "type": "paragraph",
-          "content": "This card has a code block. We'll want to apply syntax highlighting to this later."
+          "inlines": [
+            {
+              "type": "text",
+              "value": "You can include inline code like "
+            },
+            {
+              "type": "inlineCode",
+              "value": "npm install markcard"
+            },
+            {
+              "type": "text",
+              "value": " and emphasize text with "
+            },
+            {
+              "type": "strong",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "bold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " or "
+            },
+            {
+              "type": "emphasis",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": " styles. Here's a helpful link: "
+            },
+            {
+              "type": "link",
+              "url": "https://example.org",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "MarkCard repo"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ],
+          "content": "You can include inline code like `npm install markcard` and emphasize text with bold or italic styles. Here's a helpful link: MarkCard repo."
+        },
+        {
+          "type": "quote",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Note: blockquotes should be captured as quote blocks in the JSON."
+            }
+          ],
+          "content": "Note: blockquotes should be captured as quote blocks in the JSON."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Ordered steps"
+            }
+          ],
+          "content": "Ordered steps"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            {
+              "content": "Initialize the project",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Initialize the project"
+                }
+              ]
+            },
+            {
+              "content": "Add your markdown cards",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Add your markdown cards"
+                }
+              ]
+            },
+            {
+              "content": "Run the parser and renderer",
+              "inlines": [
+                {
+                  "type": "text",
+                  "value": "Run the parser and renderer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Code: JavaScript (copyable)"
+            }
+          ],
+          "content": "Code: JavaScript (copyable)"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "The following JS snippet demonstrates a utility function and should be copyable from the HTML preview."
+            }
+          ],
+          "content": "The following JS snippet demonstrates a utility function and should be copyable from the HTML preview."
         },
         {
           "type": "code",
           "language": "javascript",
-          "content": "function greet() {\r\n  console.log(\"Hello, MarkScroll!\");\r\n}"
+          "content": "// small JS helper: add and log\nexport function add(a, b) {\n  const sum = a + b;\n  console.log(`sum: ${sum}`);\n  return sum;\n}\n\n// usage\nadd(2, 3);"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Code: Python (copyable)"
+            }
+          ],
+          "content": "Code: Python (copyable)"
+        },
+        {
+          "type": "code",
+          "language": "python",
+          "content": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Mark\")"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Image"
+            }
+          ],
+          "content": "Image"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Here is an example image (relative path):"
+            }
+          ],
+          "content": "Here is an example image (relative path):"
+        },
+        {
+          "type": "image",
+          "url": "./assets/example.png",
+          "alt": "example image"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Table"
+            }
+          ],
+          "content": "Table"
+        },
+        {
+          "type": "table",
+          "header": [
+            "Name",
+            "Description"
+          ],
+          "rows": [
+            [
+              "alpha",
+              "first item"
+            ],
+            [
+              "beta",
+              "second item"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "inlines": [
+            {
+              "type": "text",
+              "value": "Final notes"
+            }
+          ],
+          "content": "Final notes"
+        },
+        {
+          "type": "paragraph",
+          "inlines": [
+            {
+              "type": "text",
+              "value": "This is the end of the single large card. Add more content here to test long cards, multiple code blocks, and media."
+            }
+          ],
+          "content": "This is the end of the single large card. Add more content here to test long cards, multiple code blocks, and media."
         }
       ]
     }
